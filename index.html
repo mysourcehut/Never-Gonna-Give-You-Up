@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Never Gonna Give You Up">
+<title>Never Gonna Give You Up</title>
+<link rel="icon" type="image/png" href="https://img-static.mihoyo.com/communityweb/upload/efc2b5f2804b63cbaf377d5cacd5eff6.png">
+<style>
+html,
+body,
+iframe {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+</style>
+<script>
+var xhr = new XMLHttpRequest();
+var called = false;
+xhr.open('HEAD', `https://graph.facebook.com/feed?callback=h`);
+xhr.onreadystatechange = function () {
+	if (xhr.readyState === 4 && xhr.status === 200) {
+		document.body.innerHTML = `<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+	}
+};
+xhr.send();
+</script>
+</head>
+
+<body>
+<iframe src="https://player.bilibili.com/player.html?aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+</body>
+
+</html>
