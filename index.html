@@ -10,27 +10,19 @@
 <style>
 html,
 body,
-iframe {
+video {
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	background-color: black;
 }
 </style>
-<script>
-var xhr = new XMLHttpRequest();
-var called = false;
-xhr.open('HEAD', `https://graph.facebook.com/feed?callback=h`);
-xhr.onreadystatechange = function () {
-	if (xhr.readyState === 4 && xhr.status === 200) {
-		document.body.innerHTML = `<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
-	}
-};
-xhr.send();
-</script>
 </head>
 
 <body>
-<iframe src="https://player.bilibili.com/player.html?aid=80433022&bvid=BV1GJ411x7h7&cid=137649199&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"></iframe>
+<video controls="controls" autoplay="autoplay">
+<source src="https://vdse.bdstatic.com/192d9a98d782d9c74c96f09db9378d93.mp4" type="video/mp4" />
+</video>
 </body>
 
 </html>
